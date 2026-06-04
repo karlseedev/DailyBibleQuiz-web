@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>헤르메스 카드뉴스 — 디자인 레퍼런스</title>
+<style>
+  :root{
+    --bg:#0e0e11; --panel:#17171c; --line:#2a2a32;
+    --txt:#ececf1; --dim:#9a9aa6; --accent:#7cf6c8; --accent2:#b69cff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);
+    font-family:-apple-system,"Apple SD Gothic Neo","Pretendard",sans-serif;
+    line-height:1.6;padding:48px 24px 96px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto}
+  h1{font-size:30px;letter-spacing:-.5px;margin-bottom:6px}
+  .sub{color:var(--dim);font-size:15px;margin-bottom:36px}
+  h2{font-size:20px;margin:44px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  /* 스타일 A~D */
+  .styles{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+  .style{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .style .k{font-size:15px;font-weight:800;margin-bottom:4px}
+  .style .k span{color:var(--accent)}
+  .style .d{font-size:13.5px;color:var(--dim)}
+  .style .u{font-size:12.5px;color:var(--accent2);margin-top:8px}
+  /* 공통 문법 */
+  .grammar{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+  .grammar ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px}
+  .grammar li{font-size:14.5px;padding-left:20px;position:relative}
+  .grammar li::before{content:"▸";position:absolute;left:0;color:var(--accent)}
+  .grammar b{color:var(--accent)}
+  /* 갤러리 */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px;margin-top:8px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+    display:flex;flex-direction:column}
+  .card img{width:100%;display:block;background:#000;object-fit:contain;max-height:420px}
+  .meta{padding:14px 16px 18px}
+  .tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.3px;
+    padding:3px 9px;border-radius:20px;margin-bottom:9px}
+  .t-hook{background:rgba(124,246,200,.14);color:var(--accent)}
+  .t-evi{background:rgba(182,156,255,.16);color:var(--accent2)}
+  .t-ctx{background:rgba(255,209,102,.15);color:#ffd166}
+  .t-rule{background:rgba(255,107,107,.15);color:#ff8585}
+  .src{font-size:12.5px;color:var(--dim);margin-bottom:7px}
+  .pt{font-size:13.5px}
+  .pt b{color:#fff}
+  .badge{display:inline-block;font-size:11px;font-weight:800;color:#0e0e11;background:var(--accent);
+    border-radius:6px;padding:1px 7px;margin-left:6px}
+  .note{font-size:12.5px;color:var(--dim);margin-top:28px;padding-top:18px;border-top:1px solid var(--line)}
+  .note a{color:var(--accent2);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>헤르메스 카드뉴스 — 디자인 레퍼런스</h1>
+  <div class="sub">2026-06-05 · "좋은 카드뉴스"의 기준을 맞추기 위한 실제 사례 모음 · 방향: <b style="color:var(--accent)">A·B·C·D 4스타일을 소재·컨셉에 맞게 모두 활용</b></div>
+
+  <h2>① 우리가 쓸 4가지 스타일 (그때그때 적절히 선택)</h2>
+  <div class="styles">
+    <div class="style">
+      <div class="k"><span>A.</span> 다크 + 볼드 타이포 + 그라데이션</div>
+      <div class="d">테크·트렌디. 거대 타이포가 주인공, 그라데이션은 양념.</div>
+      <div class="u">↳ overseas-tech에 잘 맞음 · Sprout 스타일</div>
+    </div>
+    <div class="style">
+      <div class="k"><span>B.</span> 화이트 + 에디토리얼 세리프 + 콜라주</div>
+      <div class="d">감성·큐레이션. 매거진 무드, 넘버링 + 사진 콜라주.</div>
+      <div class="u">↳ lifelore에 잘 맞음 · Canva 스타일</div>
+    </div>
+    <div class="style">
+      <div class="k"><span>C.</span> 컬러 배경 + 초대형 숫자/데이터</div>
+      <div class="d">정보·팩트. 라벨칩 + 큰 숫자 + 출처 명기.</div>
+      <div class="u">↳ painpoint에 잘 맞음 · Mailchimp 스타일</div>
+    </div>
+    <div class="style">
+      <div class="k"><span>D.</span> 사진 + 솔리드박스 미니멀</div>
+      <div class="d">사진 위 텍스트는 솔리드 박스로 분리. 배경 사진은 <b style="color:var(--txt)">본인 사진·스톡·AI배경·제품컷 등 활용처 다양</b>(본인 사진은 그중 하나).</div>
+      <div class="u">↳ 모든 컨셉 공용 · Mel Robbins 스타일</div>
+    </div>
+  </div>
+
+  <h2>② 모든 사례에서 반복되는 공통 디자인 문법</h2>
+  <div class="grammar">
+    <ul>
+      <li><b>거대한 볼드 타이포가 주인공</b> — hook은 글자가 화면의 80~90%</li>
+      <li><b>포인트 컬러 1개</b> — 다크/화이트 배경 + 강조색 하나(한 단어만 컬러)</li>
+      <li><b>라벨 칩</b> — "HOT TAKE:", "Did you know?" 알약으로 맥락 표시</li>
+      <li><b>사진은 양념</b> — 그라데이션·콜라주·하단배치, 절대 주인공 아님</li>
+      <li><b>사진 위 텍스트는 솔리드 박스로 분리</b> — 가독성 1순위 규칙</li>
+      <li><b>출처 명기</b> — 데이터 카드엔 "Source: …" (우리 provenance와 동일)</li>
+      <li><b>페이지 인디케이터 + 브랜드 락업</b> — 1/8, 점, 하단 로고로 시리즈 통일</li>
+      <li><b>숫자·넘버링</b> — 통계는 초대형 숫자, 리스트는 숫자 뱃지로 분리</li>
+    </ul>
+  </div>
+
+  <h2>③ 실전 레퍼런스 — 해외 정보형 캐러셀 (우리 컨셉에 가장 근접)</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="raw/ss_sprout_report_typo.jpeg" alt="">
+      <div class="meta">
+        <span class="tag t-hook">HOOK</span><span class="badge">A</span>
+        <div class="src">Sprout Social (2026-05)</div>
+        <div class="pt"><b>hook의 정석.</b> 라벨칩(HOT TAKE:) + 초대형 볼드 + 반전 메시지("Data doesn't drive decisions. <b>Intelligence does.</b>") + 한 구절만 그라데이션.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="raw/hs_mailchimp_data_conv.png" alt="">
+      <div class="meta">
+        <span class="tag t-evi">EVIDENCE</span><span class="badge">C</span>
+        <div class="src">Mailchimp</div>
+        <div class="pt"><b>데이터 카드 + 출처 명기.</b> "Did you know?" 칩 + 초대형 <b>70%</b> + 설명문 + "Source: …". → 우리 <b>evidence role + verify_status·provenance</b>와 정확히 일치.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="raw/ss_intelligence_dataviz.jpeg" alt="">
+      <div class="meta">
+        <span class="tag t-hook">HOOK</span><span class="badge">A</span>
+        <div class="src">Sprout Social (2026-05)</div>
+        <div class="pt"><b>다크 + 그라데이션 양념.</b> 큰 이탤릭 산세리프 + 그라데이션 인물카드 + "What's trending?" 버블. → <b>composite+배경</b> 양념의 좋은 예.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="raw/hs_melrobbins_infographic.png" alt="">
+      <div class="meta">
+        <span class="tag t-hook">HOOK</span><span class="badge">D</span>
+        <div class="src">Mel Robbins</div>
+        <div class="pt"><b>사진 + 하단 솔리드 박스.</b> 인물 사진 위 흰 박스 3줄 + 1/8 + 손글씨 로고. 배경 사진은 본인·스톡·AI 무엇이든 가능 — 글자가 안 깨지는 게 핵심.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="raw/ss_canva_trends.jpeg" alt="">
+      <div class="meta">
+        <span class="tag t-ctx">CONTEXT / TREND</span><span class="badge">B</span>
+        <div class="src">Canva (2026-05, ♥2.7K)</div>
+        <div class="pt"><b>에디토리얼 매거진 무드.</b> 거대 세리프 "TRENDS SPOTTED" + 넘버링(01~05) + 사진 콜라주. → <b>lifelore·overseas 트렌드 소개</b> 카드 톤.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="raw/ss_frankbod_grid.jpeg" alt="">
+      <div class="meta">
+        <span class="tag t-evi">EVIDENCE / 나열</span><span class="badge">D</span>
+        <div class="src">Frank Body (2026-05)</div>
+        <div class="pt"><b>2×2 그리드 + 중앙 솔리드 캡션.</b> 4컷을 격자로, 중앙에 흰 박스 한 줄. → 여러 항목을 <b>한 장에 나열</b>하는 evidence 슬라이드.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="raw/ss_clearstem_ingredient.jpeg" alt="">
+      <div class="meta">
+        <span class="tag t-evi">사진형 / 쉼표</span><span class="badge">D</span>
+        <div class="src">Clearstem (2026-05)</div>
+        <div class="pt"><b>미니멀 제품 사진.</b> 흰 배경 + 정돈된 오브제, 텍스트 최소. → 글자 없이 <b>사진만으로 호흡</b>을 주는 슬라이드(캐러셀 중간 쉼표).</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2>④ 한국 디자인 원칙 — Good vs Bad 교보재 (따라할 톤보다 '규칙' 학습용)</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="raw/elancer_2024072315255145508.jpg" alt="">
+      <div class="meta">
+        <span class="tag t-rule">규칙: 가독성</span>
+        <div class="src">elancer 블로그</div>
+        <div class="pt"><b>사진 위 텍스트 = 솔리드 박스.</b> Good은 하단 빨강 박스(읽힘), Bad는 사진 위 직접 흰 글자(안 읽힘). → 2-3 <b>렌더 검증(contrast)</b> 규칙의 근거.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="raw/elancer_2024072315264012676.jpg" alt="">
+      <div class="meta">
+        <span class="tag t-rule">규칙: 리스티클</span>
+        <div class="src">elancer 블로그</div>
+        <div class="pt"><b>항목은 숫자뱃지 + 개별 박스로 분리.</b> Good은 1·2·3·4 뱃지로 끊고, Bad는 한 박스에 욱여넣음. → <b>multi_topic·claim 나열</b> 슬라이드 규칙.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="raw/elancer_2024072315220865983.jpg" alt="">
+      <div class="meta">
+        <span class="tag t-ctx">개념도</span>
+        <div class="src">elancer 블로그</div>
+        <div class="pt"><b>개념은 도식 + 굵은 타이포.</b> 골든서클(WHY·HOW·WHAT = 목적·과정·결과), 강한 보색 대비. → <b>insight role</b>(구조를 그림으로 설명).</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="note">
+    수집 출처: <a href="https://sproutsocial.com/insights/instagram-carousel/">Sprout Social</a> ·
+    <a href="https://blog.hootsuite.com/instagram-carousel/">Hootsuite</a> ·
+    <a href="https://www.elancer.co.kr/blog/detail/284">elancer</a> ·
+    <a href="https://meetedgar.com/blog/7-instagram-carousel-examples-to-inspire-your-content">MeetEdgar</a>
+    &nbsp;|&nbsp; 내부 디자인 레퍼런스 검토용(비발행·noindex).
+  </div>
+</div>
+</body>
+</html>
