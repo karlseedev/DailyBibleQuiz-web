@@ -18,6 +18,13 @@
   h1{font-size:30px;letter-spacing:-.5px;margin-bottom:6px}
   .sub{color:var(--dim);font-size:15px;margin-bottom:36px}
   h2{font-size:20px;margin:44px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+  /* 스타일 A~D */
+  .styles{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+  .style{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .style .k{font-size:15px;font-weight:800;margin-bottom:4px}
+  .style .k span{color:var(--accent)}
+  .style .d{font-size:13.5px;color:var(--dim)}
+  .style .u{font-size:12.5px;color:var(--accent2);margin-top:8px}
   /* 공통 문법 */
   .grammar{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
   .grammar ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px}
@@ -48,9 +55,33 @@
 <body>
 <div class="wrap">
   <h1>헤르메스 카드뉴스 — 디자인 레퍼런스</h1>
-  <div class="sub">2026-06-05 · "좋은 카드뉴스"의 기준을 맞추기 위한 실제 사례 모음</div>
+  <div class="sub">2026-06-05 · "좋은 카드뉴스"의 기준을 맞추기 위한 실제 사례 모음 · 방향: <b style="color:var(--accent)">A·B·C·D 4스타일을 소재·컨셉에 맞게 모두 활용</b></div>
 
-  <h2>① 모든 사례에서 반복되는 공통 디자인 문법</h2>
+  <h2>① 우리가 쓸 4가지 스타일 (그때그때 적절히 선택)</h2>
+  <div class="styles">
+    <div class="style">
+      <div class="k"><span>A.</span> 다크 + 볼드 타이포 + 그라데이션</div>
+      <div class="d">테크·트렌디. 거대 타이포가 주인공, 그라데이션은 양념.</div>
+      <div class="u">↳ overseas-tech에 잘 맞음 · Sprout 스타일</div>
+    </div>
+    <div class="style">
+      <div class="k"><span>B.</span> 화이트 + 에디토리얼 세리프 + 콜라주</div>
+      <div class="d">감성·큐레이션. 매거진 무드, 넘버링 + 사진 콜라주.</div>
+      <div class="u">↳ lifelore에 잘 맞음 · Canva 스타일</div>
+    </div>
+    <div class="style">
+      <div class="k"><span>C.</span> 컬러 배경 + 초대형 숫자/데이터</div>
+      <div class="d">정보·팩트. 라벨칩 + 큰 숫자 + 출처 명기.</div>
+      <div class="u">↳ painpoint에 잘 맞음 · Mailchimp 스타일</div>
+    </div>
+    <div class="style">
+      <div class="k"><span>D.</span> 사진 + 솔리드박스 미니멀</div>
+      <div class="d">사진 위 텍스트는 솔리드 박스로 분리. 배경 사진은 <b style="color:var(--txt)">본인 사진·스톡·AI배경·제품컷 등 활용처 다양</b>(본인 사진은 그중 하나).</div>
+      <div class="u">↳ 모든 컨셉 공용 · Mel Robbins 스타일</div>
+    </div>
+  </div>
+
+  <h2>② 모든 사례에서 반복되는 공통 디자인 문법</h2>
   <div class="grammar">
     <ul>
       <li><b>거대한 볼드 타이포가 주인공</b> — hook은 글자가 화면의 80~90%</li>
@@ -64,7 +95,7 @@
     </ul>
   </div>
 
-  <h2>② 실전 레퍼런스 — 해외 정보형 캐러셀 (우리 컨셉에 가장 근접)</h2>
+  <h2>③ 실전 레퍼런스 — 해외 정보형 캐러셀 (우리 컨셉에 가장 근접)</h2>
   <div class="grid">
 
     <div class="card">
@@ -132,7 +163,7 @@
 
   </div>
 
-  <h2>③ 한국 디자인 원칙 — Good vs Bad 교보재 (따라할 톤보다 '규칙' 학습용)</h2>
+  <h2>④ 한국 디자인 원칙 — Good vs Bad 교보재 (따라할 톤보다 '규칙' 학습용)</h2>
   <div class="grid">
 
     <div class="card">
